@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "cleaver"
-  spec.version       = "0.0.6"
+  spec.version       = "0.0.7"
   spec.authors       = ["neelp22"]
   spec.email         = ["neelp22@gmail.com"]
   spec.summary       = %q{"Parses HTTP Request bodies when using Ruby's TCP class to create a server"}
@@ -13,9 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://rubygems.org/gems/cleaver"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0")
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.files         = ["lib/cleaver.rb"]
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
